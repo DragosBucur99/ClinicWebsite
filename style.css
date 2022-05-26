@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+--accentColor: #317AE9;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.infoMessage {
+    width: 100%;
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 15rem 2rem 15rem;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.fa-x {
+    position: absolute;
+    color: white;
+    transform: scale(1.5);
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+.infoMessage p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+nav {
+    padding: 0 15rem 0 15rem;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+
+
+.focus {
+    font-weight: bold;
+    position: relative;
+}
+
+.focus::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: var(--accentColor);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    padding: 0.8rem 3rem;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.bookButton {
+    background-color: var(--accentColor);
+}
+
+.loginButton {
+    background-color: #2E2E2E;
+    padding: 0.8rem 2rem;
+}
+
+header {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+header p {
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #2E2E2E;
+}
+
+.description, .image {
+    height: 100%;
+    flex: 1;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0 15rem;
+    text-align: left;
+    gap: 2.5rem;
+    background-color: #F8F8F8;
+}
+
+.image {
+    padding: 0 15rem;
+    background-image: url('images/headerPhoto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.howTo {
+    padding: 8rem 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.circle {
+
+height: 150px;
+width: 150px;
+background-color: #F8F8F8;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-radius: 50%;
+
+}
+
+i {
+    color: var(--accentColor);
+    transform: scale(4)
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    gap: 0.5rem;
+}
+
+strong {
+    color: #2E2E2E;
+    font-size: 1.3rem;
+}
+
+.services {
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.serviceCardsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    
+}
+
+.serviceCard { 
+    box-shadow: 0px 0px 30px -22px rgba(0,0,0,0.8);
+    flex: 1;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.serviceCard strong {
+    margin-top: 4rem;
+}
+
+
+.fa-stethoscope {
+    position: relative;
+}
+
+.fa-stethoscope::after {
+    content: '';
+    width: 50%;
+    height: 1px;
+    background-color: #2E2E2E;
+    position: absolute;
+    bottom: -5px;
+    left: 25%;
+}
+
+.ctaSection {
+    padding: 8rem 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers {
+    margin: 0rem 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0.8rem;
+    align-items: center;
+    background-color: black;
+}
+
+.col strong {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.col {
+    color: white;
+    padding: 2rem;
+    position: relative;
+}
+
+.col p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.bar {
+    width: 1px;
+    height: 5rem;
+    background-color: white;
+    opacity: 0.2;
+}
+
+.doctors {
+    margin-top: 8rem;
+    padding: 4rem 15rem;
+    display: flex;
+    background-color: #F8F8F8;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.doctorsHeader {
+
+display: flex;
+justify-content: space-between;
+width: 100%;
+
+}
+
+.viewAll {
+    background-color: #2E2E2E;
+    padding: 0.8rem 2rem;
+}
+
+.doctorCards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 2rem;
+}
+
+.docCard {
+    box-shadow: 0px 0px 30px -22px rgba(0,0,0,0.8);
+   width: 30%;
+   height: 35rem;
+background-color: white;
+}
+
+.docCardContent {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.docCardImage {
+    border-radius: 0.6rem;
+    background-image: url('images/doc1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 250px;
+    height: 300px;
+}
+
+.specializations {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.docCardContent strong {
+    font-size: 1.8rem;
+}
+
+.specializations p {
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+}
+
+.specializations p:nth-of-type(1) {
+    background-color: #c5dbf5;
+}
+
+.specializations p:nth-of-type(2) {
+    background-color: #F8F8F8;
+}
+
+.about {
+    padding: 8rem 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;    
+
+}
+
+
+.aboutText {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10rem;
+    align-items: center;
+}
+
+.aboutImage {
+    flex:1;
+    border-radius: 0.6rem;
+    background-image: url('images/clinic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 30rem;
+}
+
+.text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.text h1 {
+    line-height: 3.5rem;
+}
+
+.testimonialsContainer {
+    margin-top: -7.5rem;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.testimonialCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 30px -22px rgba(0,0,0,0.8);
+    flex: 1;
+    height: 400px;
+    padding: 0rem 2rem;
+    gap: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonialCard p {
+    font-weight: lighter;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.avatarImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 0.6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.avatar strong {
+    color: var(--accentColor);
+}
+
+.fa-quote-right {
+    color: rgba(49, 122, 233, 0.1);
+    position: absolute;
+    bottom: 1.8rem;
+    right: 2.5rem;
+    transform: scale(10);
+}
+
+.avatarName p {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.arrows {
+    margin-top: -8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.fa-arrow-left-long, .fa-arrow-right-long {
+    color: rgba(49, 122, 233, 0.5);
+    transform: scale(3);
+    cursor: pointer;
+    transition: color 0.2s linear;
+}
+
+.fa-arrow-left-long:hover, .fa-arrow-right-long:hover {
+    color: rgba(49, 122, 233, 1);
+} 
+
+.faq {
+    padding: 4rem 15rem;
+    background-color: #f9fcff;
+background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.faq strong {
+    font-weight: 500;
+}
+
+.fa-arrow-down {
+    transform: scale(1.5);
+    color: black;
+}
+
+.question {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.question::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0.1rem;
+    background-color: black;
+    left: 0;
+    bottom: -0.5rem;
+}
+
+footer {
+    padding: 8rem 15rem;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.footerCol {
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+footer .footerCol:nth-of-type(4) {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+
+}
+
+.tradeMark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.tradeMark strong {
+    font-size: 1rem;
+    opacity: 0.3;
+}
